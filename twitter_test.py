@@ -16,6 +16,11 @@ class TwitterTest(unittest.TestCase):
 
         self.assertEqual(self.twitter.tweets, ['Test message'])
 
+    def test_double_tweet(self):
+        self.twitter.tweet('Test message')
+        self.twitter.tweet('Test message')
+
+        self.assertEqual(self.twitter.tweets, ['Test message', 'Test message'])
 
 if __name__ == '__main__':
     unittest.main()
