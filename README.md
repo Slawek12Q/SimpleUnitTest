@@ -1,1 +1,1 @@
-# SimpleUnitTest
+automatic testing in python
